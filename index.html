@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080611"><meta name="description" content="JokFlix — اكتشف الأفلام والمسلسلات الجديدة والعالمية.">
+<title>JokFlix — شاهد أكثر. اشعر أكثر.</title>
+<link rel="preconnect" href="https://image.tmdb.org"><link rel="preconnect" href="https://api.themoviedb.org">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+ <a class="brand" href="#"><span class="logo">▷</span><span><b>Jok<span>Flix</span></b><small>شاهد أكثر. اشعر أكثر.</small></span></a>
+ <div class="search"><span>⌕</span><input id="search" placeholder="Search movies and series..." autocomplete="off"></div>
+ <select id="language" class="language" aria-label="Language"><option value="en">English</option><option value="ar">العربية</option><option value="es">Español</option><option value="fr">Français</option><option value="tr">Türkçe</option><option value="ko">한국어</option></select><button class="iconbtn" id="theme" aria-label="Toggle theme">☼</button>
+</header>
+<nav class="nav" id="nav">
+ <button class="active" data-page="home">⌂ <span data-i18n="home">Home</span></button><button data-page="movies">▣ <span data-i18n="movies">Movies</span></button><button data-page="series">▣ <span data-i18n="series">Series</span></button><button data-page="anime">◉ <span data-i18n="anime">Anime</span></button><button data-page="kids">☺ <span data-i18n="kids">Kids</span></button><button data-page="more">▦ <span data-i18n="more">More</span></button>
+</nav>
+<main>
+<section id="hero" class="hero"><div class="hero-content"><span class="tag" id="hero-tag">JokFlix Spotlight</span><h1 id="hero-title">Discover the world of cinema</h1><p id="hero-copy">New movies and series, all in one place.</p><div class="hero-actions"><button class="primary" id="hero-details">Details</button><button class="secondary" id="hero-play">▶ Watch</button></div></div><div class="hero-arrows"><button id="prev">‹</button><button id="next">›</button></div><div class="dots" id="dots"></div></section>
+<section class="genres" id="genres"></section>
+<div id="sections"></div>
+</main>
+<nav class="mobile-nav"><button data-page="home">⌂<small data-i18n="home">Home</small></button><button data-page="movies">▣<small data-i18n="movies">Movies</small></button><button data-page="series">▣<small data-i18n="series">Series</small></button><button data-page="anime">◉<small data-i18n="anime">Anime</small></button><button data-page="search">⌕<small data-i18n="search">Search</small></button><button data-page="more">▦<small data-i18n="more">More</small></button></nav>
+<div class="modal" id="modal" aria-hidden="true"><div class="modal-panel"><button class="close" id="close">×</button><div id="modal-body"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="/app.js"></script>
+</body></html>
